@@ -168,7 +168,7 @@ export default function Personal() {
     rel="noopener noreferrer"
     className="inline-block hover:text-black dark:hover:text-white transition-colors link-underline"
   >
-    E. Ash
+    Elliott Ash
   </Link>{' '}and{' '}
   <Link
     href="https://aarushirita.github.io/"
@@ -176,7 +176,7 @@ export default function Personal() {
     rel="noopener noreferrer"
     className="inline-block hover:text-black dark:hover:text-white transition-colors link-underline"
   >
-    A. Kalra
+    Aarushi Kalra
   </Link>, and as a replicator for the{' '}
             <Link
               href="https://www.journals.uchicago.edu/toc/jpe/current"
