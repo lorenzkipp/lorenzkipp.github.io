@@ -11,7 +11,6 @@ export const viewport: Viewport = {
   themeColor: '#ffffff',
 }
 
-
 export const metadata: Metadata = {
   metadataBase: new URL('https://nim-fawn.vercel.app/'),
   alternates: {
@@ -64,7 +63,7 @@ export default function RootLayout({
         className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
       >
         <ThemeProvider
-          enableSystem={true}
+          enableSystem
           attribute="class"
           storageKey="theme"
           defaultTheme="system"
@@ -81,3 +80,4 @@ export default function RootLayout({
     </html>
   )
 }
+
