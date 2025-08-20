@@ -189,7 +189,7 @@ export const BLOG_POSTS: BlogPost[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/LorenzK-5714',
+    link: 'https://github.com/lorenzkipp',
   },
 ]
 
