@@ -30,7 +30,11 @@ jobs:
         run: npm ci
 
       - name: Build static site
-        run: npm run static
+        run: |
+          npm run build
+          npm run export
+          touch out/.nojekyll
+
 
       - name: Add .nojekyll
         run: touch out/.nojekyll
