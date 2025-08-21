@@ -32,8 +32,12 @@ jobs:
 
       - name: Build static site (Next 15)
         run: |
-          npm run build           # creates ./out because output: 'export'
-          touch out/.nojekyll     # needed for GitHub Pages
+          npm run build            # creates ./out because output: 'export'
+          touch out/.nojekyll
+
+      # NEW: configure Pages (sets up the deployment target)
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
