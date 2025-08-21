@@ -87,7 +87,7 @@ export default function Personal() {
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-300">
 
-            I'm a first-year PhD candidate at Sciences Po.
+            I'm a first-year PhD candidate at Sciences Po.{" "}
              {/* supervised by{' '}
   <Link
     href="https://juliacage.com/"
