@@ -74,6 +74,17 @@ export function Footer() {
           <TextLoop className="text-xs text-zinc-500">
             <span>© 2025 Lorenz Kipp.</span>
             <span>Built with Next.js, React and Tailwind CSS.</span>
+          <span>
+            Design based on{" "}
+            <a
+              href="https://github.com/ibelick"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-black dark:hover:text-white transition-colors"
+            >
+              github.com/ibelick
+            </a>.
+          </span>
           </TextLoop>
         {/*</a>*/}
         <div className="text-xs text-zinc-400">

@@ -8,55 +8,45 @@ import { ThemeProvider } from 'next-themes'
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#ffffff',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#0a0a0a' }, // zinc-950-ish
+  ],
 }
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lorenzkipp.github.io/'),
-  alternates: {
-    canonical: '/'
-  },
+  alternates: { canonical: '/' }, // resolves to https://lorenzkipp.github.io/
   title: {
     default: 'Lorenz Kipp - Sciences Po',
-    template: '%s | Lorenz Kipp'
+    template: '%s | Lorenz Kipp',
   },
-  description:  'Personal website of Lorenz Kipp.',
+  description: 'Personal website of Lorenz Kipp.',
   keywords: [
     'Lorenz Kipp',
+    'Economics',
     'Sciences Po',
-    'Political Science',
-    'Public Policy',
+    'PhD',
+    'Research',
     'Data Analysis',
   ],
-  authors: [
-    { name: 'Lorenz Kipp', url: 'https://nim-fawn.vercel.app/about' },
-  ],
+  authors: [{ name: 'Lorenz Kipp', url: '/about' }], // resolves under metadataBase
   openGraph: {
-    title: 'Lorenz Kipp – Sciences Po',
+    title: 'Lorenz Kipp – Sciences Po',
     description: 'Personal website of Lorenz Kipp.',
-    url: 'https://nim-fawn.vercel.app/',
+    url: '/',                       // resolves under metadataBase
     siteName: 'Lorenz Kipp',
     locale: 'en_US',
     type: 'website',
   },
 }
 
-const geist = Geist({
-  variable: '--font-geist',
-  subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
-
+const geist = Geist({ variable: '--font-geist', subsets: ['latin'] })
+const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin'] })
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -68,7 +58,7 @@ export default function RootLayout({
           storageKey="theme"
           defaultTheme="system"
         >
-          <div className="flex min-h-screen w-full flex-col font-[family-name:var(--font-inter-tight)]">
+          <div className="flex min-h-screen w-full flex-col">
             <div className="relative mx-auto w-full max-w-screen-sm flex-1 px-4 pt-20">
               <Header />
               {children}
@@ -80,4 +70,3 @@ export default function RootLayout({
     </html>
   )
 }
-

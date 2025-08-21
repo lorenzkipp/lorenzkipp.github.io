@@ -14,8 +14,6 @@ import { Card, CardContent } from '@/components/ui/card'
 import Link from 'next/link'
 import { AnimatedBackground } from '@/components/ui/animated-background'
 import {
-  EDUCATION,
-  // PROJECTS,
   BLOG_POSTS,
   EMAIL,
   SOCIAL_LINKS,
@@ -31,15 +29,6 @@ const VARIANTS_CONTAINER = {
   },
 }
 
-// const VARIANTS_SECTION = {
-//   hidden: { opacity: 0, y: 20, filter: 'blur(8px)' },
-//   visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
-// }
-
-// const TRANSITION_SECTION = {
-//   duration: 0.3,
-// }
-
 const FADE_UP = {
   hidden: { opacity: 0, y: 10 },
   visible: {
@@ -47,57 +36,6 @@ const FADE_UP = {
     y: 0,
     transition: { duration: 0.25, ease: 'easeOut' }
   }
-}
-
-
-type ProjectVideoProps = {
-  src: string
-}
-
-function ProjectVideo({ src }: ProjectVideoProps) {
-  return (
-    <MorphingDialog
-      transition={{
-        type: 'spring',
-        bounce: 0,
-        duration: 0.3,
-      }}
-    >
-      <MorphingDialogTrigger>
-        <video
-          src={src}
-          autoPlay
-          loop
-          muted
-          className="aspect-video w-full cursor-zoom-in rounded-xl"
-        />
-      </MorphingDialogTrigger>
-      <MorphingDialogContainer>
-        <MorphingDialogContent className="relative aspect-video rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
-          <video
-            src={src}
-            autoPlay
-            loop
-            muted
-            className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
-          />
-        </MorphingDialogContent>
-        <MorphingDialogClose
-          className="fixed top-6 right-6 h-fit w-fit rounded-full bg-white p-1"
-          variants={{
-            initial: { opacity: 0 },
-            animate: {
-              opacity: 1,
-              transition: { delay: 0.3, duration: 0.1 },
-            },
-            exit: { opacity: 0, transition: { duration: 0 } },
-          }}
-        >
-          <XIcon className="h-5 w-5 text-zinc-500" />
-        </MorphingDialogClose>
-      </MorphingDialogContainer>
-    </MorphingDialog>
-  )
 }
 
 function MagneticSocialLink({
@@ -189,34 +127,7 @@ export default function Personal() {
           </p>
         </div>
       </motion.section>
-{/*      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
-        <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {PROJECTS.map((project) => (
-            <div key={project.name} className="space-y-2">
-              <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                <ProjectVideo src={project.video} />
-              </div>
-              <div className="px-1">
-                <a
-                  className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
-                  href={project.link}
-                  target="_blank"
-                >
-                  {project.name}
-                  <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
-                </a>
-                <p className="text-base text-zinc-600 dark:text-zinc-400">
-                  {project.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </motion.section>*/}
+
       <motion.section
         variants={FADE_UP}
       >
@@ -251,55 +162,6 @@ export default function Personal() {
           </AnimatedBackground>
         </div>
       </motion.section>
-
-
-
-
-    {/*  <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
-        <h3 className="mb-5 text-lg font-medium">Education</h3>
-        <div className="flex flex-col space-y-2">
-          {EDUCATION.map((edu) => (
-            <a
-              className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30 hover:shadow-md transition-shadow"
-              href={edu.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={edu.id}
-            >
-              <Spotlight
-                className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
-                size={64}
-              />
-              <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950 border border-zinc-100 dark:border-zinc-800">
-                <div className="relative flex w-full flex-row justify-between">
-                  <div>
-                    <h4 className="font-normal dark:text-zinc-100">
-                      {edu.institution}
-                    </h4>
-                  <p className="inline-flex items-center text-sm text-zinc-600 dark:text-zinc-400 gap-2">
-                    <span>{edu.degree}</span>
-                    {edu.distinction && (
-                      <span className="text-xs text-zinc-400 dark:text-zinc-500">
-                        {edu.distinction}
-                      </span>
-                    )}
-                  </p>
-                </div>
-                  <p className="text-zinc-600 dark:text-zinc-400">
-                    {edu.start} - {edu.end}
-                  </p>
-                </div>
-              </div>
-            </a>
-          ))}
-        </div>
-      </motion.section>*/}
-
-
-      
 
       <motion.section
         variants={FADE_UP}
