@@ -1,13 +1,16 @@
 // app/robots.ts
+export const dynamic = 'force-static'
+export const revalidate = false
+
 import type { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [{ userAgent: '*', allow: '/' }],
-    // remove sitemap if you don't have one yet
-    // sitemap: 'https://lorenzkipp.github.io/sitemap.xml',
+    // sitemap: 'https://lorenzkipp.github.io/sitemap.xml', // optional
   }
 }
+
 
 
 
