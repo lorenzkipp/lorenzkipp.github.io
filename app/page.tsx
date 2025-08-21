@@ -87,7 +87,8 @@ export default function Personal() {
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-300">
 
-            I'm a first-year PhD candidate at Sciences Po, supervised by{' '}
+            I'm a first-year PhD candidate at Sciences Po.
+             {/* supervised by{' '}
   <Link
     href="https://juliacage.com/"
     target="_blank"
@@ -95,7 +96,7 @@ export default function Personal() {
     className="inline-block hover:text-black dark:hover:text-white transition-colors link-underline"
   >
     Julia Cagé
-  </Link>.
+  </Link>. */}
             My main field of interest is Political Economy, though I'm also curious about more theoretical areas such as Industrial Organization and Bounded Rationality.
             One direction I'm currently exploring is the political and health impact of social media. <br /><br />
 
