@@ -30,3 +30,18 @@
   --sh-property: #73daca;
   --sh-entity: #e0af68;
 }
+
+@layer utilities {
+  .perspective { perspective: 1000px; }
+  .transform-style-preserve-3d { transform-style: preserve-3d; }
+  .backface-hidden { backface-visibility: hidden; }
+
+  /* 3D rotateY helpers */
+  .rotate-y-180 { transform: rotateY(180deg); }
+  .hover\:rotate-y-180:hover { transform: rotateY(180deg); }
+}
+
+/* only cancel the hover-rotate for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .motion-reduce\:hover\:rotate-0:hover { transform: none; }
+}
