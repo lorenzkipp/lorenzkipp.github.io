@@ -59,7 +59,7 @@ export function Header() {
 
           <div className="mt-1 text-[0.85rem] text-zinc-500 dark:text-zinc-500">
             <Link
-              href="https://www.google.com/maps/place/Sciences+Po+Department+of+Economics/@48.8555759,2.3259664,16z/"
+              href="https://maps.app.goo.gl/hBew3kcmw649qzCd6"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-black dark:hover:text-white transition-colors link-underline whitespace-normal"
