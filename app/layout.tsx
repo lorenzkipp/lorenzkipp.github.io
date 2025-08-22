@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  verification : {
+    google: 'bA8uf81UQ46-kKmJd9ifnOtzNqKfMw5ihU1xL6jPBlU',
+  },
 }
 
 const geist = Geist({ variable: '--font-geist', subsets: ['latin'] })

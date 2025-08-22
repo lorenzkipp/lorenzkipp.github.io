@@ -7,7 +7,7 @@ import type { MetadataRoute } from 'next'
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [{ userAgent: '*', allow: '/' }],
-    // sitemap: 'https://lorenzkipp.github.io/sitemap.xml', // optional
+    sitemap: 'https://lorenzkipp.github.io/sitemap.xml', 
   }
 }
 
