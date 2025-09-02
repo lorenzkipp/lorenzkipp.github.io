@@ -16,11 +16,11 @@ const THEMES_OPTIONS = [
     id: 'dark',
     icon: <MoonIcon className="h-4 w-4" />,
   },
-  {
-    label: 'System',
-    id: 'system',
-    icon: <MonitorIcon className="h-4 w-4" />,
-  },
+  // {
+  //   label: 'System',
+  //   id: 'system',
+  //   icon: <MonitorIcon className="h-4 w-4" />,
+  // },
 ]
 
 function ThemeSwitch() {
@@ -70,7 +70,6 @@ export function Footer() {
   return (
     <footer className="mt-24 border-t border-zinc-100 px-0 py-4 dark:border-zinc-800">
       <div className="flex items-center justify-between">
-        {/*<a href="https://github.com/ibelick/nim" target="_blank">*/}
           <TextLoop className="text-xs text-zinc-500">
             <span>© 2025 Lorenz Kipp.</span>
             <span>Built with Next.js, React and Tailwind CSS.</span>

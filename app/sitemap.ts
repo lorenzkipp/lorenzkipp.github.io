@@ -6,7 +6,6 @@ import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://lorenzkipp.github.io'
-  // list your real routes here
   const routes = ['/', '/about', '/blog'] 
 
   const now = new Date()

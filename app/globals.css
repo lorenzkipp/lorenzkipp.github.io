@@ -41,7 +41,6 @@
   .hover\:rotate-y-180:hover { transform: rotateY(180deg); }
 }
 
-/* only cancel the hover-rotate for users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .motion-reduce\:hover\:rotate-0:hover { transform: none; }
 }

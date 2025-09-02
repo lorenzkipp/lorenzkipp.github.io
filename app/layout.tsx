@@ -10,13 +10,13 @@ export const viewport: Viewport = {
   initialScale: 1,
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#0a0a0a' }, // zinc-950-ish
+    { media: '(prefers-color-scheme: dark)', color: '#0a0a0a' },
   ],
 }
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lorenzkipp.github.io/'),
-  alternates: { canonical: '/' }, // resolves to https://lorenzkipp.github.io/
+  alternates: { canonical: '/' },
   title: {
     default: 'Lorenz Kipp - Sciences Po',
     template: '%s | Lorenz Kipp',
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     'Research',
     'Data Analysis',
   ],
-  authors: [{ name: 'Lorenz Kipp', url: '/about' }], // resolves under metadataBase
+  authors: [{ name: 'Lorenz Kipp', url: '/about' }],
   openGraph: {
     title: 'Lorenz Kipp – Sciences Po',
     description: 'Personal website of Lorenz Kipp.',
-    url: '/',                       // resolves under metadataBase
+    url: '/',
     siteName: 'Lorenz Kipp',
     locale: 'en_US',
     type: 'website',
