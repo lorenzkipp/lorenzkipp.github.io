@@ -42,6 +42,11 @@ export const metadata: Metadata = {
   verification : {
     google: 'bA8uf81UQ46-kKmJd9ifnOtzNqKfMw5ihU1xL6jPBlU',
   },
+  icons: {
+    icon: [{ url: '/icon.ico', sizes: 'any' }],   // main favicon
+    shortcut: [{ url: '/icon.ico' }],             // browser shortcuts
+    apple: [],                                     // (optional) none for now
+  },
 }
 
 const geist = Geist({ variable: '--font-geist', subsets: ['latin'] })
