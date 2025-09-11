@@ -43,9 +43,13 @@ export const metadata: Metadata = {
     google: 'bA8uf81UQ46-kKmJd9ifnOtzNqKfMw5ihU1xL6jPBlU',
   },
   icons: {
-    icon: [{ url: '/icon.ico', sizes: 'any' }],   // main favicon
-    shortcut: [{ url: '/icon.ico' }],             // browser shortcuts
-    apple: [],                                     // (optional) none for now
+    icon: [
+      { url: '/favicon.svg?v=2', type: 'image/svg+xml' },
+      { url: '/favicon-32x32.png?v=2', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png?v=2', sizes: '16x16', type: 'image/png' },
+      '/favicon.ico?v=2',
+    ],
+    apple: '/apple-touch-icon.png?v=2',
   },
 }
 
