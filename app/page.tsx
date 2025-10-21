@@ -96,10 +96,12 @@ export default function Personal() {
   >
     Julia Cagé
   </Link>.
-            My main field of interest is Political Economy, though I'm also curious about more theoretical areas such as Industrial Organization and Bounded Rationality.
-            One direction I'm currently exploring is the political and health impact of social media. <br /><br />
+            My research is in Political Economics, with a focus on social media: how content is produced, how platforms
+            distribute it, and how it affects users. One direction I'm exploring is mental health effects on adolescents.
+            In parallel, I'm interested in what incentivises people to produce untrue or hateful content, and how 
+            platform design shapes those incentives. <br /><br />
 
-            I work as a research assistant with{' '}
+            I'm a research assistant to{' '}
   <Link
     href="https://elliottash.com/"
     target="_blank"
@@ -115,15 +117,23 @@ export default function Personal() {
     className="inline-block hover:text-black dark:hover:text-white transition-colors link-underline"
   >
     Aarushi Kalra
-  </Link>, and as a replicator for the{' '}
+  </Link>, and a replicator for the{' '}
             <Link
               href="https://www.journals.uchicago.edu/toc/jpe/current"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block hover:text-black dark:hover:text-white transition-colors link-underline"
+              className="hover:text-black dark:hover:text-white transition-colors link-underline"
             >
               <i>Journal of Political Economy</i>
-            </Link>.
+            </Link>. I also co-organise the{' '}
+            <Link
+            href="https://paris-ai-reading-group.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black dark:hover:text-white transition-colors link-underline"
+          >
+            Political Economics of AI reading group
+          </Link>.
           </p>
         </div>
       </motion.section>
