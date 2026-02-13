@@ -10,11 +10,11 @@ export function Header() {
       <div className="mb-12">
         <div className="relative h-55 w-[110%] -ml-[5%] overflow-hidden border-y border-zinc-400/55 dark:border-zinc-600/70">
           <Image
-            src="/more-wide-portrait.jpg"
+            src="/wide-portrait.png"
             alt="Portrait banner"
             fill
             priority
-            className="object-cover object-[60%_22%] saturate-100 brightness-90"
+            className="object-cover object-[60%_22%] saturate-100 brightness-95"
           />
         </div>
       </div>
