@@ -2,14 +2,6 @@
 @plugin '@tailwindcss/typography';
 @custom-variant dark (&:is(.dark *));
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -29,18 +21,18 @@
   --sh-jsxliterals: #7aa2f7;
   --sh-property: #73daca;
   --sh-entity: #e0af68;
+  --font-body: 'Segoe UI', Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .perspective { perspective: 1000px; }
-  .transform-style-preserve-3d { transform-style: preserve-3d; }
-  .backface-hidden { backface-visibility: hidden; }
-
-  /* 3D rotateY helpers */
-  .rotate-y-180 { transform: rotateY(180deg); }
-  .hover\:rotate-y-180:hover { transform: rotateY(180deg); }
+.site-body {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  letter-spacing: 0;
+  background-color: #f3f4f6;
+  color: #18181b;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .motion-reduce\:hover\:rotate-0:hover { transform: none; }
+.dark .site-body {
+  background-color: #0e1018;
+  color: #d1d5db;
 }

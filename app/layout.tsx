@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { Header } from './header'
 import { Footer } from './footer'
@@ -9,8 +8,8 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#0a0a0a' },
+    { media: '(prefers-color-scheme: light)', color: '#f3f4f6' },
+    { media: '(prefers-color-scheme: dark)', color: '#1a1d22' },
   ],
 }
 
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
   },
-  verification : {
+  verification: {
     google: 'bA8uf81UQ46-kKmJd9ifnOtzNqKfMw5ihU1xL6jPBlU',
   },
   icons: {
@@ -53,25 +52,20 @@ export const metadata: Metadata = {
   },
 }
 
-const geist = Geist({ variable: '--font-geist', subsets: ['latin'] })
-const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin'] })
-
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
-      >
+      <body className="site-body antialiased">
         <ThemeProvider
           enableSystem
           attribute="class"
           storageKey="theme"
-          defaultTheme="system"
+          defaultTheme="dark"
         >
           <div className="flex min-h-screen w-full flex-col">
-            <div className="relative mx-auto w-full max-w-screen-sm flex-1 px-4 pt-20">
+            <div className="relative mx-auto w-full max-w-[41rem] flex-1 px-4 pt-10 sm:pt-12">
               <Header />
               {children}
               <Footer />
