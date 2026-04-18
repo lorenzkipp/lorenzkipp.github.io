@@ -8,8 +8,8 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f3f4f6' },
-    { media: '(prefers-color-scheme: dark)', color: '#1a1d22' },
+    { media: '(prefers-color-scheme: light)', color: '#faf8f3' },
+    { media: '(prefers-color-scheme: dark)', color: '#14161b' },
   ],
 }
 
@@ -17,22 +17,24 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://lorenzkipp.github.io/'),
   alternates: { canonical: '/' },
   title: {
-    default: 'Lorenz Kipp - Sciences Po',
+    default: 'Lorenz Kipp',
     template: '%s | Lorenz Kipp',
   },
-  description: 'Personal website of Lorenz Kipp.',
+  description:
+    'Personal website of Lorenz Kipp, PhD candidate in Economics at Sciences Po.',
   keywords: [
     'Lorenz Kipp',
     'Economics',
     'Sciences Po',
     'PhD',
-    'Research',
-    'Data Analysis',
+    'Political Economics',
+    'Media Economics',
   ],
-  authors: [{ name: 'Lorenz Kipp', url: '/about' }],
+  authors: [{ name: 'Lorenz Kipp', url: '/' }],
   openGraph: {
-    title: 'Lorenz Kipp – Sciences Po',
-    description: 'Personal website of Lorenz Kipp.',
+    title: 'Lorenz Kipp',
+    description:
+      'Personal website of Lorenz Kipp, PhD candidate in Economics at Sciences Po.',
     url: '/',
     siteName: 'Lorenz Kipp',
     locale: 'en_US',
@@ -40,15 +42,6 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'bA8uf81UQ46-kKmJd9ifnOtzNqKfMw5ihU1xL6jPBlU',
-  },
-  icons: {
-    icon: [
-      { url: '/favicon.svg?v=2', type: 'image/svg+xml' },
-      { url: '/favicon-32x32.png?v=2', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon-16x16.png?v=2', sizes: '16x16', type: 'image/png' },
-      '/favicon.ico?v=2',
-    ],
-    apple: '/apple-touch-icon.png?v=2',
   },
 }
 

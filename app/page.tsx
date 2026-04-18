@@ -23,7 +23,7 @@ export default function Personal() {
         </h3>
         <div className="w-full space-y-3 text-zinc-700 dark:text-zinc-300">
           <p>
-            I&apos;m a PhD candidate at Sciences Po supervised by{' '}
+            I&apos;m a PhD candidate in Economics at Sciences Po, supervised by{' '}
             <Link
               href="https://juliacage.com/"
               target="_blank"
@@ -32,7 +32,7 @@ export default function Personal() {
             >
               Julia Cagé
             </Link>
-            . My research is in Political Economics, focused on social media, platform design, and user outcomes.
+            . My interests lie in political economics and the economics of media.
           </p>
           <p>
             I am a replicator for the{' '}

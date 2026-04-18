@@ -17,7 +17,12 @@ type SocialLink = {
 export const RESEARCH_ITEMS: ResearchItem[] = [
   {
     uid: 'research-1',
-    title: "Multimodal Bias and its Electoral Outcomes",
+    title: 'Strategic Sources and Media Investigation',
+    coauthors: [],
+  },
+  {
+    uid: 'research-2',
+    title: 'Multimodal Bias and its Electoral Outcomes',
     coauthors: [
       {
         name: 'Elliott Ash',
@@ -28,13 +33,6 @@ export const RESEARCH_ITEMS: ResearchItem[] = [
         link: 'https://aarushirita.github.io/',
       },
     ],
-  },
-  {
-    uid: 'research-2',
-    title: "'Off and Away all Day': Smartphone Use and Mental Health",
-    coauthors: [],
-    status: 'Working paper',
-    note: 'How school mobile phone bans impact student mental health.',
   },
 ]
 
