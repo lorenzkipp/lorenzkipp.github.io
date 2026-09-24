@@ -34,18 +34,6 @@ export default function Personal() {
             </Link>
             . My interests lie in political economics and the economics of media.
           </p>
-          <p>
-            I am a replicator for the{' '}
-            <Link
-              href="https://www.journals.uchicago.edu/toc/jpe/current"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline decoration-zinc-400 underline-offset-3 hover:text-black dark:decoration-zinc-600 dark:hover:text-white"
-            >
-              Journal of Political Economy
-            </Link>
-            .
-          </p>
         </div>
 
       </section>
