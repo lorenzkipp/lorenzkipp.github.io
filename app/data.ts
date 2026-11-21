@@ -17,12 +17,26 @@ type SocialLink = {
 export const RESEARCH_ITEMS: ResearchItem[] = [
   {
     uid: 'research-1',
-    title: 'Strategic Sources and Media Investigation',
+    title: 'Strategic Sources & Media Investigation',
     coauthors: [],
   },
   {
+    uid: 'research-3',
+    title: 'Political Campaigning in France, 1881–1956',
+    coauthors: [
+      {
+        name: 'Julia Cagé',
+        link: 'https://juliacage.com/',
+      },
+      {
+        name: 'Caroline Le Pennec',
+        link: 'https://sites.google.com/berkeley.edu/clpennec',
+      },
+    ],
+  },
+  {
     uid: 'research-2',
-    title: 'Multimodal Bias and its Electoral Outcomes',
+    title: 'Multimodal Bias & its Electoral Consequences',
     coauthors: [
       {
         name: 'Elliott Ash',

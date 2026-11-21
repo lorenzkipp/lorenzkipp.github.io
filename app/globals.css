@@ -13,6 +13,7 @@
 }
 
 :root {
+  color-scheme: light;
   --sh-class: #7aa2f7;
   --sh-sign: #89ddff;
   --sh-string: #9ece6a;
@@ -28,11 +29,6 @@
   font-family: var(--font-body);
   font-size: 13.5px;
   letter-spacing: 0;
-  background-color: #faf8f3;
-  color: #18181b;
-}
-
-.dark .site-body {
-  background-color: #14161b;
-  color: #d1d5db;
+  background-color: #fff;
+  color: #000;
 }
